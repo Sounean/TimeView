@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        android:textColor="#f0f0f0"
+        android:background="#3194d0"
+        android:text="安卓控件" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="设置日期:"
+            />
+
+        <EditText
+            android:onClick="dataChange"
+            android:id="@+id/setting_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018年11月30日"
+            android:inputType="none"
+            android:focusable="false"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#90909090" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="设置时间:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:onClick="timeChange"
+            android:id="@+id/setting_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:30"
+            android:inputType="none"
+            android:focusable="false"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#90909090" />
+</LinearLayout>
